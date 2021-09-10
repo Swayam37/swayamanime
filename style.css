@@ -1,0 +1,264 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+/*Navbar Styling*/
+.navbar {
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+}
+
+.navbar:before {
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+}
+/*logo and img*/
+.logo {
+	margin: 4px 26px;
+}
+
+.logo img {
+	margin: 3px 5px;
+	height: 60px;
+}
+/*List Style*/
+.navbar ul {
+	display: flex;
+}
+
+.navbar ul  li {
+	list-style-type: none;
+	font-size: 1.3rem;
+
+}
+
+.navbar ul  li a {
+	color: white;
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+	
+}
+
+.navbar ul  li a:hover {
+	color: black;
+	background-color: white;
+	
+}
+
+/*Home Section*/
+
+#Home {
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	height: 550px;
+	justify-content: center;
+	align-items: center;
+}
+
+#Home:before {
+	content: "";
+	background:url(bg.jpg) no-repeat center center/cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 642px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.89;
+}
+
+#Home h1 {
+	color: #cddc39;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+
+#Home p{
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Lobster', cursive;
+}
+/*Services Center*/
+.services  {
+	margin: 34px;
+	display: flex;
+}
+/*.services-container {
+	background-color: #93cbf7;
+	margin-top: 35px;
+}*/
+.services .box {
+	border: 2px solid brown;
+	padding: 25px;
+    margin: 8px 15px;
+    border-radius: 25px;
+    background-color: #eff2ff; 
+    transition: 0.5s ease-in-out; 
+}
+
+.services .box:hover {
+	transform: scale(1.1); 
+}
+.services p{
+	font-size: 1.2rem;
+}
+.services .box img{
+	height: 160px;
+    margin: auto;
+    display: block;
+}
+/*Cilents Section*/
+#client-section {
+	position: relative;
+}
+#client-section:before {
+    content: "";
+    position: absolute;
+    background: url(bg1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.clients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.client-item {
+	padding: 30px;
+}
+.clients img {
+	height: 124px;
+}
+
+/*Contact Section*/
+#contact {
+	position: relative;
+}
+#contact:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(cn.png) no-repeat center center/cover;
+}
+
+footer {
+	background:black;
+	color: white;
+	padding: 9px 20px;
+}
+
+.contact-box {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 34px;
+}
+
+.contact-box input,
+.contact-box textarea {
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1.1rem;
+	border-radius: 10px;
+}
+
+.contact-box form {
+	width: 40%;
+}
+
+.contact-box label {
+	font-size: 1.3rem;
+	font-family: 'Lobster', cursive;
+}
+
+
+/*Utilites Classes*/
+.h-primary {
+	font-size: 3.4rem;
+	padding: 11px;
+	font-family: 'Lobster', cursive;
+	/*position: relative;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	animation: Noob 1s linear infinite alternate, 
+	noob 2s linear infinite alternate;*/
+ }
+
+.h-secondary {
+	font-size: 2.8rem;
+	padding: 12px;
+	font-family: 'Lobster', cursive;
+}
+
+.btn {
+	padding: 6px 20px;
+	border : 2px solid white;
+	background-color: #cddc39;
+	color:white;
+	margin: 17px;
+	font-size: 1.5rem;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.center {
+	text-align: center;
+}
+.com{
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/*@keyframes Noob {
+	0% {
+		color: black;
+		text-shadow: none;
+
+	}
+	100% {
+		color: white;
+		text-shadow: 0 0 10px #03bcf4,
+		            0 0 20px #03bcf4,
+		            0 0 40px #03bcf4,
+		            0 0 80px #03bcf4,
+		            0 0 160px #03bcf4;
+	}
+}
+
+@keyframes noob {
+	60%,70%,79%{
+		opacity: 1;
+	}
+	65%,67%,76%,78%{
+		opacity: 0.2;
+	}
+	66%,69%,77%{
+		opacity: 0.8;
+	}
+}
+*/
